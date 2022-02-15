@@ -74,11 +74,11 @@ class SciHub(object):
 
         # REGEX PATTERNS - RECEIVED & SUBMITTED
         # 1 - 10 MAY 1960:
-        rec_1 =  "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)(\d{1,2}\s*(Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s*(19|20)\d{2})"
+        rec_1 =  "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)(\d{1,2}\s*(Jan(uary|.)?|Feb(ruary|.)?|Mar(ch|.)?|Apr(il|.)?|May|Jun(e|.)?|Jul(y|.)?|Aug(ust|.)?|Sep(tember|.)?|Oct(ober)?|Nov(ember|.)?|Dec(ember|.)?)\s*(19|20)\d{2})"
         # 2 - MAY 10, 1960
-        rec_2 = "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)((Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s?\d{1,2}\,?\s?(19|20)\d{2})"
+        rec_2 = "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)((Jan(uary|.)?|Feb(ruary|.)?|Mar(ch|.)?|Apr(il|.)?|May|Jun(e|.)?|Jul(y|.)?|Aug(ust|.)?|Sep(tember|.)?|Oct(ober|.)?|Nov(ember|.)?|Dec(ember|.)?)\s?\d{1,2}\,?\s?(19|20)\d{2})"
         # 3 - MAY 1960
-        rec_3 = "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)((Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s*(19|20)\d{2})"
+        rec_3 = "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)((Jan(uary|.)?|Feb(ruary|.)?|Mar(ch|.)?|Apr(il|.)?|May|Jun(e|.)?|Jul(y|.)?|Aug(ust|.)?|Sep(tember|.)?|Oct(ober|.)?|Nov(ember|.)?|Dec(ember|.)?)\s*(19|20)\d{2})"
         # 4 - 10/05/1960 OR 10.05.1960 OR 10/05/1960
         rec_4 = "(?:(?:received|submitted)\s?(?:on|date)?\s?\:?\s?)([1-3][0-9](\.|\-|\/|\:)?[0-1][0-9](\.|\-|\/\:)?(19|20)\d{2})"
 
@@ -97,11 +97,11 @@ class SciHub(object):
 
         # REGEX PATTERNS - ACCEPTED
         # 1 - 10 MAY 1960:
-        acc_1 =  "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)(\d{1,2}\s*(Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s*(19|20)\d{2})"
+        acc_1 =  "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)(\d{1,2}\s*(Jan(uary|.)?|Feb(ruary|.)?|Mar(ch|.)?|Apr(il|.)?|May|Jun(e|.)?|Jul(y|.)?|Aug(ust|.)?|Sep(tember|.)?|Oct(ober|.)?|Nov(ember|.)?|Dec(ember|.)?)\s*(19|20)\d{2})"
         # 2 - MAY 10, 1960
-        acc_2 = "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)((Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s?\d{1,2}\,?\s?(19|20)\d{2})"
+        acc_2 = "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)((Jan(uary|.)?|Feb(ruary|.)?|Mar(ch|.)?|Apr(il|.)?|May|Jun(e|.)?|Jul(y|.)?|Aug(ust|.)?|Sep(tember|.)?|Oct(ober|.)?|Nov(ember|.)?|Dec(ember|.)?)\s?\d{1,2}\,?\s?(19|20)\d{2})"
         # 3 - MAY 1960
-        acc_3 = "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)((Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s*(19|20)\d{2})"
+        acc_3 = "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)((Jan(uary|.)?|Feb(ruary|.)?|Mar(ch|.)?|Apr(il|.)?|May|Jun(e|.)?|Jul(y|.)?|Aug(ust|.)?|Sep(tember|.)?|Oct(ober|.)?|Nov(ember|.)?|Dec(ember|.)?)\s*(19|20)\d{2})"
         # 4 - 10/05/1960 OR 10.05.1960 OR 10/05/1960
         acc_4 = "(?:(?:accepted)\s?(?:on|date|for publication on)?\s?\:?\s?)([1-3][0-9](\.|\-|\/|\:)?[0-1][0-9](\.|\-|\/\:)?(19|20)\d{2})"
 

@@ -205,7 +205,8 @@ class SciHub(object):
             pg_count = [0,1,2, pg_count-1, pg_count-2, pg_count-3]
 
         try:
-            pdf_read = extract_text(pdf_bytes,page_numbers=pg_count).replace("\n", "")
+            pdf_read = extract_text(pdf_bytes,page_numbers=pg_count).replace("\n", " ")
+            pdf_read = re.sub(' +', ' ', pdf_read)
             return pdf_read
         except:
             self._change_base_url()

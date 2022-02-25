@@ -50,8 +50,9 @@ def quar_df_creator(quartile):
         yeardf[["New_Cat", "Quartile"]] = yeardf.apply(lambda x: only_highest(qlist=x.Categories.split("; ")), axis=1, result_type="expand")
         yeardf["Sbj_Area"] = yeardf.New_Cat.map(lambda x: [cat_sbj_dict[cat.strip()] for cat in x]).map(multimode)
 
-        # 4 - Basic Feature Engineering 
+        # 4 - Basic Feature Engineering
         yeardf["Issn"] = yeardf.Issn.str.split(",")
+        yeardf["Issn"] = yeardf.Issn.map(lambda x: [iss.strip() for iss in x])
         yeardf["Year"] = yearnow
         yeardf["Total_Docs"] = yeardf[f"Total Docs. ({yearnow})"]
         yeardf.drop(["SJR Best Quartile", "Categories", f"Total Docs. ({yearnow})"], axis=1, inplace=True)

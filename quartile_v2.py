@@ -3,8 +3,9 @@ import numpy as np
 from os import listdir
 import re
 
-from statistics import mode, multimode
-from random import sample
+from statistics import mode
+from collections import Counter
+from random import sample, choices
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -23,7 +24,7 @@ def only_highest(qlist):
         return [], np.nan
 
 
-def quar_df_creator(quartile):
+def quar_df_creator_v2(quartile):
 
     if quartile == "all":
         q1_df = pd.DataFrame()
@@ -48,7 +49,7 @@ def quar_df_creator(quartile):
 
         # 3 - Category & Sbj Area
         yeardf[["New_Cat", "Quartile"]] = yeardf.apply(lambda x: only_highest(qlist=x.Categories.split("; ")), axis=1, result_type="expand")
-        yeardf["Sbj_Area"] = yeardf.New_Cat.map(lambda x: [cat_sbj_dict[cat.strip()] for cat in x]).map(multimode)
+        yeardf["Sbj_Area"] = yeardf.New_Cat.map(lambda x: [cat_sbj_dict[cat.strip()] for cat in x]).map(Counter)
 
         # 4 - Basic Feature Engineering
         yeardf["Issn"] = yeardf.Issn.str.split(",")
@@ -73,10 +74,10 @@ def quar_df_creator(quartile):
 
 
 
-def explade(countdf):
+def explade_v2(countdf):
     # No need to extract ISSNs as CrossRef func. accepts lists as argument
     count1_df = countdf[countdf["Sbj_Area"].map(len) == 1]
-    count1_df["Sbj_Area"] = count1_df["Sbj_Area"].str[0]
+    count1_df["Sbj_Area"] = count1_df["Sbj_Area"].map(list).str[0]
     count2_df = countdf[countdf["Sbj_Area"].map(len) > 1]
     
     newcount_list = []
@@ -85,33 +86,36 @@ def explade(countdf):
         issn = row["Issn"]
         year = row["Year"] 
         s_a = row["Sbj_Area"]
-        count = row["Total_Docs"]
+        cr_ = row["CR_Results"]
+        sh_ = row["SH_Results"]
+        crc = row["CR_Count"]
+        tot_docs = row["Total_Docs"]
 
-        rmndr = count % len(s_a)
-        rmndrchoice = sample(s_a,rmndr)
+        tot_sa_count = sum(list(s_a.values()))
 
-        for sbj in s_a:
-            if sbj in rmndrchoice:
-                to_append = [issn, year, sbj, int(count/len(s_a))+1]
+        rmndr = tot_docs % tot_sa_count
+        rmndrchoice = Counter(choices(list(s_a.keys()), weights=list(s_a.values()), k= rmndr))
+
+        for sbj, val in s_a.items():
+            count = tot_docs*val/tot_sa_count
+
+            if sbj in list(rmndrchoice.keys()):
+                to_append = [issn, year, sbj, cr_, sh_, crc, int(count+rmndrchoice[sbj])]
             else:
-                to_append = [issn, year, sbj, int(count/len(s_a))]
+                to_append = [issn, year, sbj, cr_, sh_, crc, int(count)]
             newcount_list.append(to_append)
 
     expladed_df = count1_df.append(pd.DataFrame(newcount_list, columns=count1_df.columns), ignore_index=True)
-    #pivot_df = pd.pivot_table(data=expladed_df, values="Total_Docs", columns="Year", index="Sbj_Area",aggfunc=sum)
     return expladed_df
 
-def retr_ready(q1_df, target):
+def retr_ready_v2(q1_df):
     # Step 1: Create a dataframe that only has the values necessasry for the final pivot table
     q_main = q1_df[["Issn","Year", "Sbj_Area", "Total_Docs"]]
     q_main = q_main[q_main.Sbj_Area.map(len) < q_main.Total_Docs]
-    q_main = explade(q_main)
+    q_main = explade_v2(q_main)
 
     # Step 2: Create the CONSTANT sample_count pivot table from pivotq1_full
+    #sa_pivot_full = pd.pivot_table(data=q_main, columns="Year", index="Sbj_Area", values="Total_Docs", aggfunc=sum)
 
-    sa_pivot_full = pd.pivot_table(data=q_main, columns="Year", index="Sbj_Area", values="Total_Docs", aggfunc=sum)
+    return q_main
 
-    sa_pivot_sample = sa_pivot_full.applymap(lambda x: (x*target/(sa_pivot_full.sum().sum())).round())
-
-    return q_main, sa_pivot_full, sa_pivot_sample
-        

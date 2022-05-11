@@ -99,12 +99,13 @@ def explade(countdf):
     newcount_list = []
 
     for index, row in count2_df.iterrows():
+        id = row["ID"]
         issn = row["ISSN"]
         year = row["Year"] 
         s_a = row["Sbj_Area"]
         #cr_ = row["CR_Results"]
         sh_ = row["SH_Results"]
-        #crc = row["CR_Count"]
+        crc = row["CR_Count"]
         tot_docs = row["Total_Docs"]
 
         tot_sa_count = sum(list(s_a.values()))
@@ -113,14 +114,15 @@ def explade(countdf):
         rmndrchoice = Counter(choices(list(s_a.keys()), weights=list(s_a.values()), k= rmndr))
 
         for sbj, val in s_a.items():
-            count = tot_docs*val/tot_sa_count
+            count = tot_docs * val/tot_sa_count
+            c_count = crc * val/tot_sa_count
 
             if sbj in list(rmndrchoice.keys()):
                 #to_append = [issn, year, sbj, cr_, sh_, crc, int(count+rmndrchoice[sbj])]
-                to_append = [issn, year, sbj, sh_, int(count+rmndrchoice[sbj])]
+                to_append = [id, issn, year, sbj, sh_, int(c_count+rmndrchoice[sbj]), int(count+rmndrchoice[sbj])]
                 
             else:
-                to_append = [issn, year, sbj, sh_, int(count)]
+                to_append = [id, issn, year, sbj, sh_, int(c_count+rmndrchoice[sbj]), int(count)]
             newcount_list.append(to_append)
 
     expladed_df = count1_df.append(pd.DataFrame(newcount_list, columns=count1_df.columns), ignore_index=True)
@@ -130,7 +132,7 @@ def explade(countdf):
 def retr_ready(q_df):
     # Step 1: Create a dataframe that only has the values necessasry for the final pivot table
     #q_main = q1_df[["ISSN", "Year", "Sbj_Area", "CR_Results", "SH_Results", "CR_Count", "Total_Docs"]]
-    q_main = q_df[["ISSN", "Year", "Sbj_Area", "SH_Results", "Total_Docs"]]
+    q_main = q_df.reset_index()[["ID","ISSN", "Year", "Sbj_Area", "SH_Results", "CR_Count", "Total_Docs"]]
 
     #q1_df = q1_df[q1_df.Sbj_Area.map(len) < q1_df.Total_Docs]
     q_main = explade(q_main)
@@ -139,9 +141,11 @@ def retr_ready(q_df):
 
     sa_pivot_full = pd.pivot_table(data=q_main, columns="Year", index="Sbj_Area", values="Total_Docs", aggfunc=sum)
 
-    sa_pivot_meta_only = pd.pivot_table(data=q_main[q_main.SH_Results == True], columns="Year", index="Sbj_Area", values="Total_Docs", aggfunc=sum)
+    sa_pivot_meta = pd.pivot_table(data=q_main[q_main.SH_Results == True], columns="Year", index="Sbj_Area", values="Total_Docs", aggfunc=sum)
 
-    return q_main, sa_pivot_full, sa_pivot_meta_only
+    sa_pivot_cr = pd.pivot_table(data=q_main[q_main.SH_Results == True], columns="Year", index="Sbj_Area", values="CR_Count", aggfunc=sum)
+
+    return q_main, sa_pivot_full, sa_pivot_meta, sa_pivot_cr
 
 def jrnl_id_creator(n_id, df):
      return [f"{n_id}_{x}" for x in range(len(df))]

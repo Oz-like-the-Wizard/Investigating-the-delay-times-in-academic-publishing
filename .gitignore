@@ -1,0 +1,303 @@
+Backups & Others/.gitignore
+Backups & Others/0-3and10-15done_Scihub_df.csv
+Backups & Others/15K_done_Scihub_df.csv
+Backups & Others/20K_Scihub_df.csv
+Backups & Others/artcl_df_backup.csv
+Backups & Others/ceto_df_complete.csv
+Backups & Others/crossref_scraper.py
+Backups & Others/date_df_upgrade_simplified.ipynb
+Backups & Others/date_df_upgrade_tests.ipynb
+Backups & Others/duplicate_doi_retr_backup.csv
+Backups & Others/encry_pdf.pdf
+Backups & Others/meta_df_backup.csv
+Backups & Others/meta_df_full_backup.csv
+Backups & Others/q1_date_df_all
+Backups & Others/q2_jrnl_df
+Backups & Others/quartile.py
+Backups & Others/retr_issnupdated_backup.csv
+Backups & Others/retr_onetwo_oldissns
+Backups & Others/Scihub_df_backup.csv
+Backups & Others/sh_comp_one_df_backup.csv
+Backups & Others/SumCetCet.zip
+Backups & Others/summan_df_complete.csv
+Backups & Others/test_sel.xlsx
+Backups & Others/unpy_comp_one_df_backup.csv
+Backups & Others/Unpy_df_backup.csv
+Backups & Others/Unpy_fail_df_backup.csv
+Backups & Others/unpy_get_dates.py
+Backups & Others/Unpy_one_fin_backup.csv
+Backups & Others/Unpy_scihub_run.csv
+Backups & Others/Unpy_suc_run_v2.csv
+Backups & Others/Unpy_suc_run.csv
+Backups & Others/world_universities_and_domains.json
+Backups & Others/5a Backup/date_df
+Backups & Others/5a Backup/date_df_full
+Backups & Others/5a Backup/retr_complete_one
+Backups & Others/5a Backup/second_run_df
+Backups & Others/5a Backup/second_run_doi_rry
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/cet_5b_date_df_wartortle.py
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/cet_date_df_dict
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/date_df_5b
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/date_df_ok
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/ogi_date_df_dict
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/scihub_wartortle.py
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/sum_5b_date_df_wartortle.py
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/sum_date_df_dict
+Backups & Others/5b_SumCetCet_date_df_wartortle_Backup/world_universities_and_domains.json
+Backups & Others/Istanbul/ceto_dict
+Backups & Others/Istanbul/ceto_meta.ipynb
+Backups & Others/Istanbul/doilist
+Backups & Others/Istanbul/meta_df.csv
+Backups & Others/Istanbul/nb1_Scimago_CrossRef_Unpy_getmeta.ipynb
+Backups & Others/Istanbul/nb2_get_dates.ipynb
+Backups & Others/Istanbul/ogi_dict
+Backups & Others/Istanbul/ogi_meta.csv
+Backups & Others/Istanbul/part4_crossref_scihub_merge_complete_one.ipynb
+Backups & Others/Istanbul/py1_scimago.py
+Backups & Others/Istanbul/py2_quartile.py
+Backups & Others/Istanbul/py3_crossref_scraper.py
+Backups & Others/Istanbul/py4_unpy_get_dates.py
+Backups & Others/Istanbul/py5_scihub_upgraded.py
+Backups & Others/Istanbul/retr_complete_one.csv
+Backups & Others/Istanbul/sum_dict
+Backups & Others/Istanbul/sum_meta.py
+Backups & Others/Istanbul/take 2.zip
+Backups & Others/Istanbul/Years/scimagojr 2010.csv
+Backups & Others/Istanbul/Years/scimagojr 2011.csv
+Backups & Others/Istanbul/Years/scimagojr 2012.csv
+Backups & Others/Istanbul/Years/scimagojr 2013.csv
+Backups & Others/Istanbul/Years/scimagojr 2014.csv
+Backups & Others/Istanbul/Years/scimagojr 2015.csv
+Backups & Others/Istanbul/Years/scimagojr 2016.csv
+Backups & Others/Istanbul/Years/scimagojr 2017.csv
+Backups & Others/Istanbul/Years/scimagojr 2018.csv
+Backups & Others/Istanbul/Years/scimagojr 2019.csv
+Backups & Others/Istanbul/Years/scimagojr 2020.csv
+Backups & Others/Istanbul/__pycache__/py1_scimago.cpython-38.pyc
+Backups & Others/Istanbul/__pycache__/py2_quartile.cpython-38.pyc
+Backups & Others/Istanbul/__pycache__/py3_crossref_scraper.cpython-38.pyc
+Backups & Others/Istanbul/__pycache__/py4_unpy_get_dates.cpython-38.pyc
+Backups & Others/Istanbul/__pycache__/py5_scihub_upgraded.cpython-38.pyc
+Backups & Others/Istanbul/take 2/ceto_meta.ipynb
+Backups & Others/Istanbul/take 2/doilist
+Backups & Others/Istanbul/take 2/sum_meta.py
+Backups & Others/Main Files/date_df_ok
+Backups & Others/Main Files/date_df_ok_final
+Backups & Others/Main Files/retr_onetwo
+Backups & Others/Main Files/retr_q1
+Backups & Others/SumCetCet/15K_done_Scihub_df.csv
+Backups & Others/SumCetCet/ceto_nb.ipynb
+Backups & Others/SumCetCet/pip_install.txt
+Backups & Others/SumCetCet/scihub_upgraded.py
+Backups & Others/SumCetCet/summan_nb.ipynb
+Backups & Others/SumCetCet/summan_nb.py
+Backups & Others/SumCetCet_second_run/cet_meta_list
+Backups & Others/SumCetCet_second_run/cet_second_run
+Backups & Others/SumCetCet_second_run/second_run_df_old_backup
+Backups & Others/SumCetCet_second_run/sum_meta_list
+Backups & Others/SumCetCet_second_run/sum_second_run
+Backups & Others/SumCetCet_second_run_dates (4b)/cet_dates_dict
+Backups & Others/SumCetCet_second_run_dates (4b)/cet_meta_list
+Backups & Others/SumCetCet_second_run_dates (4b)/cet_second_run
+Backups & Others/SumCetCet_second_run_dates (4b)/cet_second_run_dates.py
+Backups & Others/SumCetCet_second_run_dates (4b)/ogi_dates_dict
+Backups & Others/SumCetCet_second_run_dates (4b)/scihub_upgraded.py
+Backups & Others/SumCetCet_second_run_dates (4b)/second_run_dates_dict
+Backups & Others/SumCetCet_second_run_dates (4b)/second_run_doi_rry
+Backups & Others/SumCetCet_second_run_dates (4b)/sum_dates_dict
+Backups & Others/SumCetCet_second_run_dates (4b)/sum_meta_list
+Backups & Others/SumCetCet_second_run_dates (4b)/sum_second_run
+Backups & Others/SumCetCet_second_run_dates (4b)/sum_second_run_dates.py
+Backups & Others/SumCetCet_second_run_new/ceto_second_run.ipynb
+Backups & Others/SumCetCet_second_run_new/second_run_df
+Backups & Others/SumCetCet_second_run_new/sum_second_run.py
+Backups & Others/SumCet_CR_Count (5a)/cet_retr_cr_count.py
+Backups & Others/SumCet_CR_Count (5a)/cet_retr_onetwo_cr_count
+Backups & Others/SumCet_CR_Count (5a)/retr_onetwo
+Backups & Others/SumCet_CR_Count (5a)/sum_retr_cr_count.py
+Backups & Others/SumCet_CR_Count (5a)/sum_retr_onetwo_cr_count
+Backups & Others/Testing/42percent.ipynb
+Backups & Others/Testing/Fourth_Adv_Date_Testing/part3c_get_dates_nb.ipynb
+Backups & Others/Testing/Fourth_Adv_Date_Testing/pdf_libr_select_nb.ipynb
+Backups & Others/Testing/Fourth_Adv_Date_Testing/scihub_simplified.py
+Backups & Others/Testing/Fourth_Adv_Date_Testing/scihub_upgrade_nb.ipynb
+Backups & Others/Testing/Fourth_Adv_Date_Testing/unpaywall_cache
+Backups & Others/Testing/InitialTesting/config.json
+Backups & Others/Testing/InitialTesting/deneme_abs_rat.xml
+Backups & Others/Testing/InitialTesting/deneme_abs2_rat.json
+Backups & Others/Testing/InitialTesting/deneme_abs2_rat.xml
+Backups & Others/Testing/InitialTesting/deneme_abs2.json
+Backups & Others/Testing/InitialTesting/deneme_abs3.json
+Backups & Others/Testing/InitialTesting/deneme_full_rat.xml
+Backups & Others/Testing/InitialTesting/deneme_full2_rat.json
+Backups & Others/Testing/InitialTesting/deneme_full2.json
+Backups & Others/Testing/InitialTesting/deneme_full3.json
+Backups & Others/Testing/InitialTesting/deneme.json
+Backups & Others/Testing/InitialTesting/exampleProg.py
+Backups & Others/Testing/InitialTesting/first.ipynb
+Backups & Others/Testing/InitialTesting/scimago_nb.ipynb
+Backups & Others/Testing/InitialTesting/second.ipynb
+Backups & Others/Testing/InitialTesting/subjArea_nb.ipynb
+Backups & Others/Testing/InitialTesting/test_elsapy.py
+Backups & Others/Testing/InitialTesting/third.ipynb
+Backups & Others/Testing/SecondaryTesting/bokbok.pdf
+Backups & Others/Testing/SecondaryTesting/df_mainnb.ipynb
+Backups & Others/Testing/SecondaryTesting/export_test.ipynb
+Backups & Others/Testing/SecondaryTesting/exportlist.txt
+Backups & Others/Testing/SecondaryTesting/fetch_test.ipynb
+Backups & Others/Testing/SecondaryTesting/get_pdf.ipynb
+Backups & Others/Testing/SecondaryTesting/My EndNote Library.xml
+Backups & Others/Testing/SecondaryTesting/quartile_nb.ipynb
+Backups & Others/Testing/SecondaryTesting/regex_datetime_nb.ipynb
+Backups & Others/Testing/SecondaryTesting/scimago_list.ipynb
+Backups & Others/Testing/SecondaryTesting/scimago_mainnb.ipynb
+Backups & Others/Testing/Third_DataRetr_Testing/artcl_count_comparison.ipynb
+Backups & Others/Testing/Third_DataRetr_Testing/part3_get_dates_nb.ipynb
+Backups & Others/Testing/Third_DataRetr_Testing/part3b_get_dates_nb.ipynb
+Backups & Others/Testing/Third_DataRetr_Testing/regex_update_nb.ipynb
+Backups & Others/Testing/Third_DataRetr_Testing/scihub_ogi.py
+Backups & Others/Testing/Third_DataRetr_Testing/unpaywall_cache
+Backups & Others/Testing/Third_DataRetr_Testing/unpaywall_cache_291221
+Backups & Others/Testing/Third_DataRetr_Testing/xmas.ipynb
+Backups & Others/crossrefapi-master/crossrefapi-master/.gitignore
+Backups & Others/crossrefapi-master/crossrefapi-master/.travis.yml
+Backups & Others/crossrefapi-master/crossrefapi-master/LICENSE
+Backups & Others/crossrefapi-master/crossrefapi-master/MANIFEST.in
+Backups & Others/crossrefapi-master/crossrefapi-master/README.rst
+Backups & Others/crossrefapi-master/crossrefapi-master/setup.cfg
+Backups & Others/crossrefapi-master/crossrefapi-master/setup.py
+Backups & Others/crossrefapi-master/crossrefapi-master/crossref/__init__.py
+Backups & Others/crossrefapi-master/crossrefapi-master/crossref/restful.py
+Backups & Others/crossrefapi-master/crossrefapi-master/crossref/utils.py
+Backups & Others/crossrefapi-master/crossrefapi-master/crossref/validators.py
+Backups & Others/crossrefapi-master/crossrefapi-master/tests/__init__.py
+Backups & Others/crossrefapi-master/crossrefapi-master/tests/test_restful.py
+Backups & Others/crossrefapi-master/crossrefapi-master/tests/test_validators.py
+Backups & Others/logs/elsapy-20210906.log
+Backups & Others/logs/elsapy-20210908.log
+Backups & Others/paperbot/bibliometrix _ An R-tool for comprehensive science mapping analysis.pdf
+Backups & Others/paperbot/bibtex.bib
+Backups & Others/paperbot/result.csv
+Backups & Others/yedek_csv/20K_Scihub_df.csv
+Backups & Others/yedek_csv/ceto_df_complete.csv
+Backups & Others/yedek_csv/summan_df_complete.csv
+Scopus_API_keys.txt
+7a_variables/7a_CR_for_q2_run/7a_results_nb.ipynb
+7a_variables/7a_CR_for_q2_run/cet_meta_list
+7a_variables/7a_CR_for_q2_run/part7a_cet_q2_crossref_run.py
+7a_variables/7a_CR_for_q2_run/part7a_sum_q2_crossref_run.py
+7a_variables/7a_CR_for_q2_run/q2_jrnl_cet
+7a_variables/7a_CR_for_q2_run/q2_jrnl_df
+7a_variables/7a_CR_for_q2_run/q2_jrnl_sum
+7a_variables/7a_CR_for_q2_run/sum_meta_list
+7a_variables/7a_SH_for_q2_run/cet_meta_list
+7a_variables/7a_SH_for_q2_run/ogi_meta_list
+7a_variables/7a_SH_for_q2_run/part7a_cet_q2_scihub_run.py
+7a_variables/7a_SH_for_q2_run/part7a_sum_q2_scihub_run.py
+7a_variables/7a_SH_for_q2_run/q2_date_df_all
+7a_variables/7a_SH_for_q2_run/q2_date_dict_cet
+7a_variables/7a_SH_for_q2_run/q2_date_dict_df
+7a_variables/7a_SH_for_q2_run/q2_date_dict_ogi
+7a_variables/7a_SH_for_q2_run/q2_date_dict_sum
+7a_variables/7a_SH_for_q2_run/q2_jrnl_cet
+7a_variables/7a_SH_for_q2_run/q2_jrnl_cet_SH
+7a_variables/7a_SH_for_q2_run/q2_jrnl_ogi
+7a_variables/7a_SH_for_q2_run/q2_jrnl_ogi_SH
+7a_variables/7a_SH_for_q2_run/q2_jrnl_sum
+7a_variables/7a_SH_for_q2_run/q2_jrnl_sum_SH
+7a_variables/7a_SH_for_q2_run/q2_meta_df
+7a_variables/7a_SH_for_q2_run/scihub_blastoise.py
+7a_variables/7a_SH_for_q2_run/sum_meta_list
+7c_variables/all_doi_dict
+7c_variables/7c_CR_for_q1_run/7c_q1_fe_CR_run_cet.py
+7c_variables/7c_CR_for_q1_run/7c_q1_fe_CR_run_sum.py
+7c_variables/7c_CR_for_q1_run/cet_q1_meta_fe
+7c_variables/7c_CR_for_q1_run/ogi_q1_meta_fe
+7c_variables/7c_CR_for_q1_run/q1_jrnl_df
+7c_variables/7c_CR_for_q1_run/sum_q1_meta_fe
+7c_variables/7c_SH_for_q1_run/7c_q1_fe_SH_run_cet.py
+7c_variables/7c_SH_for_q1_run/7c_q1_fe_SH_run_sum.py
+7c_variables/7c_SH_for_q1_run/q1_date_df_25may
+7c_variables/7c_SH_for_q1_run/q1_date_df_old
+7c_variables/7c_SH_for_q1_run/q1_date_fe_all
+7c_variables/7c_SH_for_q1_run/q1_date_fe_cet
+7c_variables/7c_SH_for_q1_run/q1_date_fe_ogi
+7c_variables/7c_SH_for_q1_run/q1_date_fe_ogi_part1_7c
+7c_variables/7c_SH_for_q1_run/q1_date_fe_ogi_part2_7c
+7c_variables/7c_SH_for_q1_run/q1_date_fe_sum
+7c_variables/7c_SH_for_q1_run/q1_jrnl_df_25may
+7c_variables/7c_SH_for_q1_run/q1_meta_fe
+7c_variables/7c_SH_for_q1_run/q1_meta_fe_all
+7c_variables/7c_SH_for_q1_run/scihub_blastoise.py
+7c_variables/7c_partial_fill/7c_partial_fill_cet.py
+7c_variables/7c_partial_fill/7c_partial_fill_sum.py
+7c_variables/7c_partial_fill/all_doi_dict
+7c_variables/7c_partial_fill/q1_jrnl_df
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/cet_pr_cr_results
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/cet_pr_sh_fail
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/cet_pr_sh_succ
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/pr_cr_results
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/pr_sh_fail
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/pr_sh_succ
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/sum_pr_cr_results
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/sum_pr_sh_fail
+7c_variables/7c_partial_fill/7c_partial_fill_SumCetCet_results/sum_pr_sh_succ
+7e_variables/all_dois
+7e_variables/doi_skip_list
+7e_variables/last_5k_run_Sum.zip
+7e_variables/new_additions_df
+7e_variables/new_required_df
+7e_variables/pr_results_df
+7e_variables/q1_date_df_20july
+7e_variables/q1_date_df_24jul
+7e_variables/q1_date_df_25jul
+7e_variables/q1_date_df_Aug3
+7e_variables/q1_date_pr
+7e_variables/q1_jrnl_df_21july
+7e_variables/q1_jrnl_df_24jul
+7e_variables/q1_jrnl_df_24jul_morning
+7e_variables/q1_jrnl_df_25jul
+7e_variables/q1_jrnl_df_Aug3
+7e_variables/remainder_df
+7e_variables/remainder_fail
+7e_variables/remainder_succ
+7e_variables/remainder_untested
+7e_variables/sel_untested_df
+7e_variables/last_5k_run_Sum/all_dois_5k
+7e_variables/last_5k_run_Sum/last_5k_sum.ipynb
+7e_variables/last_5k_run_Sum/new_req_cr_results
+7e_variables/last_5k_run_Sum/new_req_sh_results
+7e_variables/last_5k_run_Sum/required_5k_df
+7e_variables/last_5k_run_Sum/scihub_blastoise.py
+7e_variables/last_5k_run_Sum/summan_fix.py
+7e_variables/last_5k_run_Sum/__pycache__/scihub_blastoise.cpython-38.pyc
+7e_variables/new_required_df_run_Cet/doi_skip_list
+7e_variables/new_required_df_run_Cet/new_required_df
+7e_variables/new_required_df_run_Cet/scihub_blastoise.py
+7e_variables/new_required_df_run_Sum/doi_skip_list
+7e_variables/new_required_df_run_Sum/new_req_cr_results
+7e_variables/new_required_df_run_Sum/new_req_cr_results2
+7e_variables/new_required_df_run_Sum/new_req_fail_df
+7e_variables/new_required_df_run_Sum/new_req_sh_fail
+7e_variables/new_required_df_run_Sum/new_req_sh_fail2
+7e_variables/new_required_df_run_Sum/new_req_sh_succ
+7e_variables/new_required_df_run_Sum/new_req_sh_succ2
+7e_variables/new_required_df_run_Sum/new_req_suc_df
+7e_variables/new_required_df_run_Sum/new_required_df
+7e_variables/new_required_df_run_Sum/new_required_df_run_7e.ipynb
+7e_variables/new_required_df_run_Sum/new_required_run_7e.py
+7e_variables/new_required_df_run_Sum/scihub_blastoise.py
+7e_variables/sel_untested_dates_run_Ogi/scihub_blastoise.py
+7e_variables/sel_untested_dates_run_Ogi/sel_untested_dates
+7e_variables/sel_untested_dates_run_Ogi/sel_untested_df
+7e_variables/sel_untested_dates_run_Ogi/untested_dates_run_7e.ipynb
+7e_variables/sel_untested_dates_run_Ogi/__pycache__/scihub_blastoise.cpython-38.pyc
+Backups & Others/elsapy/
+Backups & Others/pybliometrics/
+Backups & Others/scihub.py/
+q1_date_df
+q1_date_df_copy
+q1_date_exploded
+q1_remainder_df
+q1_untested_df
+

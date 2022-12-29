@@ -1,7 +1,8 @@
-# Thesis-Project---Publishing-Delay-in-Scholarly-Journals
+# Investigating the delay times in academic publishing 
+# NOVA IMS University - Data Science and Advanced Analytics MSc - Dissertation
 
-This repository includes all the necessary codes used so far in my thesis project aiming to analyze the reasons behind the publishing lag time between an article's submission to a scholarly journal to its publication.
-
-As this is a work in progress, the repository  & notebooks are not in their final form.
-
-However, to get a general understanding of the project, you can check notebooks from parts 4-5-6.
+The aim of this study is to analyze the differences in article publishing delay times from different
+perspectives. Previous works on the topic suggest there are significant differences between article
+publication times, which has a direct effect on the author’s personal and professional life. However, as
+the required dates for the analysis are not available in article databases, the works on the topic are
+limited to certain publishers/databases.
